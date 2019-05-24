@@ -1,3 +1,4 @@
+require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -15,9 +16,12 @@ def first_challenge
 
   #your code here
   contacts.each do |person, data|
-   data.each do |key, value|
-    key.delete_if == "strawberry"
+   data.each do |attribute, value|
+    if attribute == :favorite_icecream_flavors
+      value.each do |flavor|
+      ["strawberry"].delete_if
     end
-  end
-  contacts
+   end
+ end
+    contacts
 end
