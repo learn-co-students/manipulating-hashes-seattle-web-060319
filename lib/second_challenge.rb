@@ -5,8 +5,15 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
+  
+  new_array = []
 
-  #code your solution here!
+  groceries.each do |food_group, list|
+    
+    new_array.concat(groceries[food_group])
+  end
+  
+    new_array
 
   
 
