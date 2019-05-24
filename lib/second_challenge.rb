@@ -7,6 +7,5 @@ def second_challenge
   }
 
   #code your solution here!
-  groceries.
-
+  groceries.key << groceries.values << groceries.min  
 end
